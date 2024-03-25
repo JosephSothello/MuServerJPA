@@ -33,29 +33,6 @@ public class MuServerMain {
         		
         		.start();
 
-//                .addHandler(Method.GET, "/", (request, response, pathParams) -> {
-//                    // Use JPA to interact with the database
-//                    em.getTransaction().begin();
-//                    // Suppose MyEntity is an @Entity class you want to retrieve data from
-//                    List<User> entities = em.createQuery("SELECT u FROM User u", User.class).getResultList();
-//                    em.getTransaction().commit();
-//                    
-//                    // Process and respond with the data
-//                    response.write(entities.toString());
-//                })
-//                .addHandler(Method.GET, "/tables", (request, response, pathParams) -> {
-//                	em.getTransaction().begin();
-//                	List<RestaurantTable> entities = em.createQuery("SELECT rt FROM RestaurantTable rt", RestaurantTable.class).getResultList();
-//                	em.getTransaction().commit();
-//                	response.write(entities.toString());
-//                })
-//                .addHandler(Method.GET, "/reservations", (request, response, pathParams) -> {
-//                	em.getTransaction().begin();
-//                	List<RestaurantTable> entities = em.createQuery("SELECT r FROM Reservation r", RestaurantTable.class).getResultList();
-//                	em.getTransaction().commit();
-//                	response.write(entities.toString());
-//                })
-
         System.out.println("Server started at " + server.uri());
 
 	}
